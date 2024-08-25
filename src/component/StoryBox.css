@@ -1,0 +1,20 @@
+/* Custom scrollbar styles */
+.story-box {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.5) transparent; /* Slider color and background color */
+}
+
+/* WebKit browsers (Safari, Chrome, Edge) */
+.story-box::-webkit-scrollbar {
+    width: 12px; /* Width of the entire scrollbar */
+}
+
+.story-box::-webkit-scrollbar-track {
+    background: transparent; /* Background of the scrollbar track */
+}
+
+.story-box::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5); /* Slider color */
+    border-radius: 20px; /* Rounded corners for the slider */
+    border: 3px solid transparent; /* Space around the slider */
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <symbol viewBox="0 0 24 24" id="icon-news">
+      <path d="M0 0v20c0 2.2 1.8 4 4 4h16c2.2 0 4-1.8 4-4V4h-6V0zm2 2h14v18c0 .742.266 1.402.625 2H4c-1.117 0-2-.883-2-2zm2 2v3h10V4zm14 2h4v14c0 1.117-.883 2-2 2s-2-.883-2-2v-1h2v-2h-2v-1h2v-2h-2v-1h2v-2h-2v-1h2V8h-2zM4 9v2h4V9zm6 0v2h4V9zm-6 3v2h4v-2zm6 0v2h4v-2zm-6 3v2h4v-2zm6 0v2h4v-2zm-6 3v2h4v-2zm6 0v2h4v-2z"/>
+    </symbol>
+  </defs>
+</svg>
