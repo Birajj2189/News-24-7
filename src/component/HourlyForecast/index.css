@@ -1,0 +1,53 @@
+/* Custom scrollbar styles */
+.graph-box {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.5) transparent; /* Slider color and background color */
+}
+
+/* WebKit browsers (Safari, Chrome, Edge) */
+.graph-box::-webkit-scrollbar {
+    width: 12px; /* Width of the entire scrollbar */
+}
+
+.graph-box::-webkit-scrollbar-track {
+    background: transparent; /* Background of the scrollbar track */
+}
+
+.graph-box::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5); /* Slider color */
+    border-radius: 20px; /* Rounded corners for the slider */
+    border: 3px solid transparent; /* Space around the slider */
+    display: none; /* Hide the scrollbar thumb by default */
+    transition: display 0.3s; /* Smooth transition for the opacity */
+}
+
+.graph-box:hover::-webkit-scrollbar-thumb {
+    display: block; /* Show the scrollbar thumb on hover */
+}
+
+/* Custom scrollbar styles */
+.hour-box {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.5) transparent; /* Slider color and background color */
+}
+
+/* WebKit browsers (Safari, Chrome, Edge) */
+.hour-box::-webkit-scrollbar {
+    width: 12px; /* Width of the entire scrollbar */
+}
+
+.hour-box::-webkit-scrollbar-track {
+    background: transparent; /* Background of the scrollbar track */
+}
+
+.hour-box::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5); /* Slider color */
+    border-radius: 20px; /* Rounded corners for the slider */
+    border: 3px solid transparent; /* Space around the slider */
+    opacity: 0; /* Hide the scrollbar thumb by default */
+    transition: opacity 0.3s; /* Smooth transition for the opacity */
+}
+
+.hour-box:hover::-webkit-scrollbar-thumb {
+    opacity: 1; /* Show the scrollbar thumb on hover */
+}
