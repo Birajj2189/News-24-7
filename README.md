@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# News 24/7
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**News 24/7** is a utility web portal designed to deliver all the latest news and weather updates on one platform. The portal features customizable news based on user interests, top headlines from around the world, weather forecasts, and more.
 
-## Available Scripts
+## Features
+- **Top Headlines:** Displays the top news from around the world.
+- **Customizable News Search:** Users can search for news based on their interests.
+- **Infinite Scrolling:** Endless news feed to enhance user experience.
+- **Weather Tab:** Displays weather details such as precipitation, humidity, wind speed, max/min temperatures, hourly forecasts, 10-day weather forecast, and location-specific weather news.
+- **Location-based Weather Search:** Users can search for weather details of any location.
+  
+## Tech Stack
+- **Frontend:**
+  - React.js
+  - Tailwind CSS
+  - Axios (for handling API requests)
 
-In the project directory, you can run:
+- **APIs:**
+  - Free News API (for news data)
+  - Weather API (for weather-related data)
 
-### `npm start`
+## Setup & Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
+- Node.js (version 14 or higher)
+- NPM or Yarn
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Installation Steps
 
-### `npm test`
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/news-247.git
+   cd news-247
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-### `npm run build`
+3. **Set up API keys**:
+   - Obtain an API key from [News API](https://newsapi.org/) and [Weather API](https://openweathermap.org/).
+   - Create a `.env` file in the root directory and add the API keys as follows:
+     ```
+     REACT_APP_NEWS_API_KEY=your_news_api_key
+     REACT_APP_WEATHER_API_KEY=your_weather_api_key
+     ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Run the project**:
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   This will start the application locally at [http://localhost:3000](http://localhost:3000).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Features Breakdown
 
-### `npm run eject`
+### 1. **Top Headlines**
+   The homepage displays the top news headlines around the world, pulling data from the news API.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 2. **Customizable News Search**
+   - Users can search for news based on their interests.
+   - A dynamic search bar allows for filtering news stories by category, keyword, or region.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3. **Infinite Scrolling**
+   As the user scrolls down the page, additional news articles are loaded automatically, improving the user experience.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 4. **Weather Tab**
+   The weather tab provides a detailed overview of weather conditions in any location. This includes:
+   - Current conditions: Precipitation, humidity, wind speed, max/min temperature.
+   - Hourly forecast: A graph with temperature variations over the next 24 hours.
+   - 10-day forecast: The predicted weather for the next 10 days.
+   - Weather-related news for the searched area.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 5. **Location-based Weather Search**
+   Users can search for any location to get the weather data for that specific place.
 
-## Learn More
+## Screenshots
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+(Include any relevant screenshots of your app’s UI here)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
+If you would like to contribute to the project:
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-name`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add new feature'`).
+5. Push to the branch (`git push origin feature-name`).
+6. Create a new Pull Request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
